@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Farzan — Portfolio",
   description:
     "Software Engineer Portfolio built with Next.js, TypeScript, and React Three Fiber.",
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/aaa.svg" },
 };
 
 export default function RootLayout({
@@ -15,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" dir="ltr">
-      <body className="bg-neutral-950 text-neutral-100 antialiased">
-        {children}
-      </body>
+      <body className="bg-black text-neutral-100 antialiased">{children}</body>
     </html>
   );
 }
