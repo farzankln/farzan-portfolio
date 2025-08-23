@@ -24,8 +24,9 @@ const TechnicalExpertise = ({
         {techData.map((categoryData, i) => (
           <motion.div
             key={categoryData.category}
-            className="relative bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg ring-1 ring-white/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:ring-blue-400"
-            initial={{ opacity: 0, scale: 0.95 }}
+            className="relative bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg ring-1 ring-white/20 
+            transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover:shadow-2xl"
+            initial={{ opacity: 0, scale: 1 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: i * 0.1 }}
             viewport={{ once: true }}
@@ -46,15 +47,16 @@ const TechnicalExpertise = ({
                     href={item.href || "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-3 text-white transition-all duration-300 transform hover:scale-105 hover:text-blue-400 focus:outline-none focus:ring-0"
+                    className="group flex items-center gap-3 text-white transition-all duration-300 transform 
+                    hover:scale-105 hover:text-cyan-300 focus:outline-none focus:ring-0"
                     title={item.title}
                   >
                     {item.icon && (
-                      <span className="text-lg text-white transition-colors duration-300 group-hover:text-blue-400">
+                      <span className="text-lg text-white transition-colors duration-300 group-hover:text-cyan-300">
                         {item.icon}
                       </span>
                     )}
-                    <span className="text-base font-medium text-white transition-colors duration-300 group-hover:text-blue-400">
+                    <span className="text-base font-medium text-white transition-colors duration-300 group-hover:text-cyan-300">
                       {item.title}
                     </span>
                   </a>

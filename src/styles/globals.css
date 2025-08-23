@@ -3,13 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Arial", "Helvetica", sans-serif;
+  --font-mono: "Courier New", monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,11 +15,154 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-[var(--background)] text-[var(--foreground)] font-sans;
 }
+
 .split-text > span {
   display: inline-block;
   white-space: nowrap;
+}
+
+@layer utilities {
+  .bg-radial-pattern {
+    @apply w-full h-full rounded-2xl;
+    background: radial-gradient(
+        50% 50% at 100% 0,
+        #53eafd 0% 5%,
+        #000000 6% 15%,
+        #53eafd 16% 25%,
+        #000000 26% 35%,
+        #53eafd 36% 45%,
+        #000000 46% 55%,
+        #53eafd 56% 65%,
+        #000000 66% 75%,
+        #53eafd 76% 85%,
+        #000000 86% 95%,
+        #0000 96%
+      ),
+      radial-gradient(
+        50% 50% at 0 100%,
+        #53eafd 0% 5%,
+        #000000 6% 15%,
+        #53eafd 16% 25%,
+        #000000 26% 35%,
+        #53eafd 36% 45%,
+        #000000 46% 55%,
+        #53eafd 56% 65%,
+        #000000 66% 75%,
+        #53eafd 76% 85%,
+        #000000 86% 95%,
+        #0000 96%
+      ),
+      radial-gradient(
+        50% 50%,
+        #53eafd 0% 5%,
+        #000000 6% 15%,
+        #53eafd 16% 25%,
+        #000000 26% 35%,
+        #53eafd 36% 45%,
+        #000000 46% 55%,
+        #53eafd 56% 65%,
+        #000000 66% 75%,
+        #53eafd 76% 85%,
+        #000000 86% 95%,
+        #0000 96%
+      ),
+      radial-gradient(
+          50% 50%,
+          #53eafd 0% 5%,
+          #000000 6% 15%,
+          #53eafd 16% 25%,
+          #000000 26% 35%,
+          #53eafd 36% 45%,
+          #000000 46% 55%,
+          #53eafd 56% 65%,
+          #000000 66% 75%,
+          #53eafd 76% 85%,
+          #000000 86% 95%,
+          #0000 96%
+        )
+        28px 28px;
+    background-size: 56px 56px;
+  }
+}
+
+@layer utilities {
+  .bg-peppers-pattern {
+    @apply w-full h-full rounded-2xl;
+    background: radial-gradient(
+          calc(1.28 * 10px + 3.75px / 2) at left 50% bottom calc(-0.8 * 10px),
+          #49bad1 calc(100% - 3.75px),
+          #000000 calc(101% - 3.75px) 100%,
+          #0000 101%
+        )
+        calc(2 * 10px) calc(-1 * calc(1.5 * 10px + 3.75px)),
+      radial-gradient(
+          calc(1.28 * 10px + 3.75px / 2) at left 50% bottom calc(-0.8 * 10px),
+          #247e90 calc(100% - 3.75px),
+          #000000 calc(101% - 3.75px) 100%,
+          #0000 101%
+        )
+        calc(-1 * 10px) calc(calc(1.5 * 10px + 3.75px) / -2),
+      radial-gradient(
+          calc(1.28 * 10px + 3.75px / 2) at left 50% top calc(-0.8 * 10px),
+          #247e90 calc(100% - 3.75px),
+          #000000 calc(101% - 3.75px) 100%,
+          #0000 101%
+        )
+        0 calc(1.5 * 10px + 3.75px),
+      radial-gradient(
+          calc(1.28 * 10px + 3.75px / 2) at left 50% top calc(-0.8 * 10px),
+          #49bad1 calc(100% - 3.75px),
+          #000000 calc(101% - 3.75px) 100%,
+          #0000 101%
+        )
+        10px calc(calc(1.5 * 10px + 3.75px) / 2),
+      linear-gradient(#49bad1 50%, #247e90 0);
+    background-size: calc(4 * 10px) calc(1.5 * 10px + 3.75px);
+  }
+}
+@layer utilities {
+  .bg-fiber-pattern {
+    @apply w-full h-full rounded-2xl;
+    background: conic-gradient(
+        from 0deg at calc(500% / 6) calc(100% / 3),
+        #252525 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from -120deg at calc(100% / 6) calc(100% / 3),
+        #151515 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from 120deg at calc(100% / 3) calc(500% / 6),
+        #000000 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from 120deg at calc(200% / 3) calc(500% / 6),
+        #000000 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from -180deg at calc(100% / 3) 50%,
+        #151515 60deg,
+        #000000 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from 60deg at calc(200% / 3) 50%,
+        #000000 60deg,
+        #252525 0 120deg,
+        #0000 0
+      ),
+      conic-gradient(
+        from -60deg at 50% calc(100% / 3),
+        #000000 120deg,
+        #151515 0 240deg,
+        #252525 0
+      );
+    background-size: 35px 20px;
+  }
 }

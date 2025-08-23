@@ -8,8 +8,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-16 border-t border-white/10 bg-neutral-950">
-      <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer className="relative mt-16 border-t border-white/10 bg-neutral-950">
+      <div className="absolute inset-0 bg-fiber-pattern rounded-t-2xl pointer-events-none opacity-20"></div>
+      <div className="relative z-10 mx-auto max-w-6xl px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-6">
           <a
             href="https://github.com/farzankln"

@@ -13,25 +13,21 @@ export default function HomePage() {
       <div className="fixed inset-0 z-0 w-full h-full">
         <Hero3DBg />
       </div>
-
-      <main className="relative z-10 min-h-screen">
+      <div className="relative z-10 min-h-screen">
         <Hero />
-
         <section className="mx-auto max-w-6xl px-4 py-10">
           <TechnicalExpertise techData={techData} />
         </section>
 
         <section className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="text-3xl font-semibold mb-6 text-white">Projects</h2>
           <ProjectsGrid items={projects} />
         </section>
 
         <section className="mx-auto max-w-6xl px-4 py-10">
-          <h2 className="text-3xl font-semibold mb-6 text-white">Articles</h2>
           <ArticlesList items={articles} />
         </section>
         <Footer />
-      </main>
+      </div>
     </div>
   );
 }
