@@ -15,14 +15,40 @@ export const projects = [
       "This is a simple authentication app built with Next.js and NextAuth.js, allowing users to sign up and log in using Google, GitHub, or email/password authentication. The app uses MongoDB to store user credentials.",
     image: "/images/AuthenticationApp.png",
     href: "https://next-js-authentication-app-zeta.vercel.app/",
-    tags: ["Next.js", "NextAuth.js", "MongoDB", "bcrypt "],
+    tags: ["Next.js", "NextAuth.js", "MongoDB", "bcrypt"],
   },
   {
     id: "p3",
     title: "Chef Mate",
-    description: "",
-    image: "/images/ChefMate.png",
+    description: "A recipe management app to browse and save favorite recipes.",
+    image: "/images/preChefMate.png",
+    href: "#",
+    tags: ["Next.js", "Zustand", "MongoDB", "NextAuth.js"],
+  },
+  {
+    id: "p4",
+    title: "Movie Nest",
+    description:
+      "Movie Nest is a web application that allows users to Browse trending & newly released movies Search for movies by title View detailed movie information, including posters and trailers Watch official trailers directly from YouTube",
+    image: "/images/MovieNest.png",
     href: "https://movie-nest-delta.vercel.app/",
+    tags: ["React.js", "TypeScript", "Tailwind", "YouTube Embeds"],
+  },
+  {
+    id: "p5",
+    title: "Authentication App",
+    description:
+      "This is a simple authentication app built with Next.js and NextAuth.js, allowing users to sign up and log in using Google, GitHub, or email/password authentication. The app uses MongoDB to store user credentials.",
+    image: "/images/AuthenticationApp.png",
+    href: "https://next-js-authentication-app-zeta.vercel.app/",
+    tags: ["Next.js", "NextAuth.js", "MongoDB", "bcrypt"],
+  },
+  {
+    id: "p6",
+    title: "Chef Mate",
+    description: "A recipe management app to browse and save favorite recipes.",
+    image: "/images/preChefMate.png",
+    href: "#",
     tags: ["Next.js", "Zustand", "MongoDB", "NextAuth.js"],
   },
 ];
