@@ -1,16 +1,14 @@
 "use client";
+
 import React, { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import { FlipWordsProps } from "@/types/GlobalsTypes";
 
-export const FlipWords = ({
+export const FlipWords: React.FC<FlipWordsProps> = ({
   words,
   duration = 3000,
   className,
-}: {
-  words: string[];
-  duration?: number;
-  className?: string;
 }) => {
   const [currentWord, setCurrentWord] = useState(words[0]);
   const [isAnimating, setIsAnimating] = useState<boolean>(false);

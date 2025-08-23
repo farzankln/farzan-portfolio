@@ -2,15 +2,7 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
-type LoadMoreListProps<T> = {
-  items: T[];
-  renderItem: (item: T, index: number) => React.ReactNode;
-  initialCount?: number;
-  incrementCount?: number;
-  gridClassName?: string;
-  keyField?: keyof T;
-};
+import { LoadMoreListProps } from "@/types/GlobalsTypes";
 
 export default function LoadMoreList<T>({
   items,

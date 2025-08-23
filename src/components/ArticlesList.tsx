@@ -2,14 +2,7 @@
 
 import { motion } from "framer-motion";
 import LoadMoreList from "@/components/ui/PaginatedList";
-
-type Article = {
-  id: string;
-  title: string;
-  date: string;
-  excerpt: string;
-  href: string;
-};
+import { Article } from "@/types/GlobalsTypes";
 
 export default function ArticlesList({ items }: { items: Article[] }) {
   const renderArticle = (a: Article, index: number) => (

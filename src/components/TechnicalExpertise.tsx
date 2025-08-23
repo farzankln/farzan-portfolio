@@ -1,18 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-type Item = {
-  icon?: React.ReactNode;
-  title: string;
-  id: string;
-  href?: string;
-};
+import { TechItem } from "@/types/GlobalsTypes";
 
 const TechnicalExpertise = ({
   techData,
 }: {
-  techData: { category: string; items: Item[] }[];
+  techData: { category: string; items: TechItem[] }[];
 }) => {
   return (
     <section className="container mx-auto py-12 max-w-7xl px-4">

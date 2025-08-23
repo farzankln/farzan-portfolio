@@ -3,15 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import LoadMoreList from "@/components/ui/PaginatedList";
-
-type Project = {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  href: string;
-  tags: string[];
-};
+import { Project } from "@/types/GlobalsTypes";
 
 export default function ProjectsGrid({ items }: { items: Project[] }) {
   const renderProject = (p: Project, index: number) => (
