@@ -5,7 +5,12 @@
     "gsap",
     "Kalantari",
     "logoloop",
+    "Materialdesign",
     "Nextdotjs",
+    "Nextui",
+    "Reactquery",
+    "shadcn",
+    "Shadcnui",
     "Tweens"
   ]
 }
