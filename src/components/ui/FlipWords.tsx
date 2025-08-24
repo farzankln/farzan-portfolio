@@ -55,7 +55,7 @@ export const FlipWords: React.FC<FlipWordsProps> = ({
           position: "absolute",
         }}
         className={cn(
-          "z-10 inline-block relative text-left text-neutral-900 dark:text-neutral-100 pl-2.5",
+          "z-10 inline-block relative text-left text-neutral-900 dark:text-cyan-600 pl-2.5",
           className
         )}
         key={currentWord}
