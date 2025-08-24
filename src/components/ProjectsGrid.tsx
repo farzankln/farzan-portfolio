@@ -17,7 +17,7 @@ export default function ProjectsGrid({ items }: { items: Project[] }) {
       aria-label={`View project: ${p.title}`}
       initial={{ opacity: 0, scale: 1 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, delay: index * 0.05 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
       <div
@@ -37,7 +37,9 @@ export default function ProjectsGrid({ items }: { items: Project[] }) {
         <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-cyan-300">
           {p.title}
         </h3>
-        <p className="mt-2 text-sm text-gray-300 line-clamp-3">{p.description}</p>
+        <p className="mt-2 text-sm text-gray-300 line-clamp-3">
+          {p.description}
+        </p>
         <div className="mt-4 flex flex-wrap gap-2">
           {p.tags.map((t) => (
             <span
@@ -57,7 +59,7 @@ export default function ProjectsGrid({ items }: { items: Project[] }) {
   );
 
   return (
-    <section>
+    <section id="work">
       <motion.h3
         className="text-3xl font-semibold mb-8 text-white"
         initial={{ opacity: 0 }}

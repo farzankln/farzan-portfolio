@@ -15,7 +15,7 @@ export default function ArticlesList({ items }: { items: Article[] }) {
       aria-label={`Read article: ${a.title}`}
       initial={{ opacity: 0, scale: 1 }}
       whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.6, delay: index * 0.05 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
       <div

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
+import LoadingScreen from "@/components/ui/LoadingScreen";
 
 export const metadata: Metadata = {
-  title: "Farzan — Portfolio",
-  description:
-    "Software Engineer Portfolio built with Next.js, TypeScript, and React Three Fiber.",
-  icons: { icon: "/aaa.svg" },
+  title: "Farzan portfolio",
+  description: "ّFrontend Developer",
+  icons: { icon: "/account.svg" },
 };
 
 export default function RootLayout({
@@ -15,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" dir="ltr">
-      <body className="bg-black text-neutral-100 antialiased">{children}</body>
+      <body className="bg-black text-neutral-100 antialiased">
+        <LoadingScreen />
+        {children}
+      </body>
     </html>
   );
 }
