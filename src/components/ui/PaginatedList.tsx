@@ -51,11 +51,18 @@ export default function LoadMoreList<T>({
       </motion.div>
 
       {(visibleItems < items.length || visibleItems > initialCount) && (
-        <div className="mt-10 flex justify-center gap-4 flex-wrap">
+        <motion.div
+          className="mt-10 flex justify-center gap-4 flex-wrap"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           {visibleItems < items.length && (
             <button
               onClick={handleLoadMore}
-              className="rounded-full bg-blue-600/80 backdrop-blur-md px-6 py-2 text-sm font-medium text-white hover:bg-blue-500/90 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="cursor-pointer rounded-full bg-cyan-700 backdrop-blur-md px-6 py-2 text-sm font-medium 
+              text-white hover:bg-cyan-500/85 hover:shadow-lg transition-all focus:outline-none"
               aria-label="Load more items"
             >
               Load More
@@ -64,13 +71,14 @@ export default function LoadMoreList<T>({
           {visibleItems > initialCount && (
             <button
               onClick={handleShowLess}
-              className="rounded-full bg-neutral-700/60 backdrop-blur-md px-6 py-2 text-sm font-medium text-white hover:bg-neutral-600/70 hover:shadow-lg transition-all focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="cursor-pointer rounded-full bg-neutral-700/60 backdrop-blur-md px-6 py-2 text-sm font-medium 
+              text-white hover:bg-neutral-600/70 hover:shadow-lg transition-all focus:outline-none"
               aria-label="Show fewer items"
             >
               Show Less
             </button>
           )}
-        </div>
+        </motion.div>
       )}
     </div>
   );
