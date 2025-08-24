@@ -51,3 +51,8 @@ export type LoadMoreListProps<T> = {
   gridClassName?: string;
   keyField?: keyof T;
 };
+
+export interface TooltipProps {
+  text: string;
+  isVisible: boolean;
+}

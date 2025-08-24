@@ -6,23 +6,23 @@ import Footer from "@/components/Footer";
 import { techData } from "@/components/icons/icons";
 import TechnicalExpertise from "@/components/TechnicalExpertise";
 import Hero3DBg from "@/components/ui/Hero3DBg";
+import Navbar from "@/components/navbar/Navbar";
 
 export default function HomePage() {
   return (
-    <div className="relative bg-black overflow-hidden">
+    <div className="relative bg-black overflow-hidden select-none scroll-smooth">
       <div className="fixed inset-0 z-0 w-full h-full">
         <Hero3DBg />
       </div>
       <div className="relative z-10 min-h-screen">
+        <Navbar />
         <Hero />
         <section className="mx-auto max-w-6xl px-4 py-10">
           <TechnicalExpertise techData={techData} />
         </section>
-
         <section className="mx-auto max-w-6xl px-4 py-10">
           <ProjectsGrid items={projects} />
         </section>
-
         <section className="mx-auto max-w-6xl px-4 py-10">
           <ArticlesList items={articles} />
         </section>

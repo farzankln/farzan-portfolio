@@ -1,17 +1,18 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaEnvelope,
-  FaPhone,
-} from "react-icons/fa";
+"use client";
+
+import { useState } from "react";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import ContactModal from "./navbar/ContactModal";
+import { AiOutlinePhone } from "react-icons/ai";
 
 export default function Footer() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <footer className="relative mt-16 border-t border-white/10 bg-neutral-950">
       <div className="absolute inset-0 bg-fiber-pattern rounded-t-2xl pointer-events-none opacity-20"></div>
       <div className="relative z-10 mx-auto max-w-6xl px-4 py-8 text-sm text-neutral-400 flex flex-col md:flex-row items-center justify-between gap-6">
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center gap-4 md:gap-6 justify-center md:justify-start">
           <a
             href="https://github.com/farzankln"
             target="_blank"
@@ -38,21 +39,17 @@ export default function Footer() {
           </a>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          <a
-            href="mailto:farzankalantari.pg@gmail.com"
-            className="flex items-center gap-2 hover:text-white transition-transform transform hover:scale-110"
+        <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 justify-center md:justify-end">
+          <button
+            onClick={() => setShowModal(true)}
+            className="flex items-center gap-2 text-neutral-400 hover:text-white transition-transform transform hover:scale-110"
           >
-            <FaEnvelope /> farzankalantari.pg@gmail.com
-          </a>
-          <a
-            href="tel:+989372046438"
-            className="flex items-center gap-2 hover:text-white transition-transform transform hover:scale-110"
-          >
-            <FaPhone /> +98 937 204 64 38
-          </a>
+            <AiOutlinePhone />
+            Get in touch
+          </button>
         </div>
       </div>
+      <ContactModal isOpen={showModal} onClose={() => setShowModal(false)} />
     </footer>
   );
 }

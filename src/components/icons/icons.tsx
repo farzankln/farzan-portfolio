@@ -17,12 +17,16 @@ import {
   SiOpenzeppelin,
   SiMui,
   SiMongodb,
+  SiGmail,
 } from "react-icons/si";
 import { IoShield } from "react-icons/io5";
 import { PiGraph } from "react-icons/pi";
 import { MdOutlineWeb } from "react-icons/md";
 import { IoDocumentOutline } from "react-icons/io5";
 import { TbStackMiddle } from "react-icons/tb";
+import { IoChevronDown } from "react-icons/io5";
+import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
+import { FaRegAddressBook } from "react-icons/fa";
 
 export const techData = [
   {
@@ -185,3 +189,32 @@ export const techData = [
     ],
   },
 ];
+
+export const BouncingDownArrow = {
+  icon: <IoChevronDown />,
+};
+
+export const Nav = [
+  { icon: <AiOutlineHome />, name: "Home", id: "#home" },
+  { icon: <AiOutlinePhone />, name: "Phone" },
+];
+
+export const ContactIcon = [
+  {
+    id: "c1",
+    icon: <AiOutlinePhone />,
+    title: "+98 937 204 64 38",
+    href: "tel:989372046438",
+  },
+  {
+    id: "c2",
+    icon: <SiGmail />,
+    title: "farzankalantari.pg@gmail.com",
+    href: "mailto:farzankalantari.pg@gmail.com",
+  },
+];
+
+export const AddressIcon = {
+  icon: <FaRegAddressBook />,
+  title: "Iran, Shiraz",
+};
