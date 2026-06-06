@@ -26,13 +26,13 @@ ${AddressIcon.title}
     setTimeout(() => setCopied(false), 1500);
   };
 
-  const commonClasses = "text-white hover:text-cyan-400 transition block mb-2";
+  const commonClasses = "text-white hover:text-cyan-400 transition flex items-center gap-2";
 
   const glassStyle =
-    "bg-neutral-800/80 backdrop-blur-4xl border border-white/30 rounded-xl p-6 shadow-xl text-gray-900";
+    "bg-neutral-800/80 backdrop-blur-4xl border border-white/30 rounded-xl p-6 shadow-xl text-white";
 
   const renderLinks = () => (
-    <>
+    <div className="flex flex-wrap gap-4">
       {ContactIcon.map((item) => (
         <a
           key={item.id}
@@ -44,10 +44,10 @@ ${AddressIcon.title}
           {item.icon} {item.title}
         </a>
       ))}
-      <p className="text-gray-200 mb-4 flex items-center gap-2">
+      <div className="flex items-center gap-2 text-gray-200">
         {AddressIcon.icon} {AddressIcon.title}
-      </p>
-    </>
+      </div>
+    </div>
   );
 
   return (

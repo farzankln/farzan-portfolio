@@ -204,7 +204,7 @@ export const ContactIcon = [
     id: "c1",
     icon: <AiOutlinePhone />,
     title: "+98 937 204 64 38",
-    href: "tel:989372046438",
+    href: "tel:+989372046438",
   },
   {
     id: "c2",
