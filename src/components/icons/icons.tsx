@@ -21,12 +21,13 @@ import {
 } from "react-icons/si";
 import { IoShield } from "react-icons/io5";
 import { PiGraph } from "react-icons/pi";
-import { MdOutlineWeb } from "react-icons/md";
+import { MdContentCopy, MdOutlineWeb } from "react-icons/md";
 import { IoDocumentOutline } from "react-icons/io5";
 import { TbStackMiddle } from "react-icons/tb";
 import { IoChevronDown } from "react-icons/io5";
 import { AiOutlineHome, AiOutlinePhone } from "react-icons/ai";
-import { FaRegAddressBook } from "react-icons/fa";
+import { FaRegAddressBook, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { LuMail } from "react-icons/lu";
 
 export const techData = [
   {
@@ -212,9 +213,33 @@ export const ContactIcon = [
     title: "farzankalantari.pg@gmail.com",
     href: "mailto:farzankalantari.pg@gmail.com",
   },
+  {
+    id: "c3",
+    icon: <SiGithub />,
+    title: "GitHub",
+    href: "https://github.com/farzankln",
+  },
+  {
+    id: "c4",
+    icon: <FaLinkedin />,
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/farzan-kalantari",
+  },
+  {
+    id: "c5",
+    icon: <FaInstagram />,
+    title: "Instagram",
+    href: "https://www.instagram.com/farzan_kalantari",
+  },
 ];
 
 export const AddressIcon = {
   icon: <FaRegAddressBook />,
   title: "Iran, Shiraz",
+};
+export const MailIcon = {
+  icon: <LuMail />,
+};
+export const CopyIcon = {
+  icon: <MdContentCopy />,
 };
