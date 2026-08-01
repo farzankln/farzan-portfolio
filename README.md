@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👋 Hi, I'm Farzan Kalantari  
 
-## Getting Started
+### 💻 Frontend Developer | React & Next.js Specialist | UI/UX Enthusiast  
 
-First, run the development server:
+🚀 Passionate about creating **modern, responsive, and high-performance web applications**.  
+Focused on **performance optimization, accessibility**, and **building great user experiences**.  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack  
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📈 GitHub Stats  
+![Farzan's GitHub stats](https://github-readme-stats.vercel.app/api?username=farzankln&show_icons=true&theme=radical)  
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=farzankln&layout=compact&theme=radical)  
+![GitHub Streak](https://streak-stats.demolab.com?user=farzankln&theme=radical)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Featured Projects  
+- **[Sorting Visualizer](https://github.com/farzankln/sorting-visualizer)** – A modern, responsive sorting algorithm visualizer built with Next.js.  
+- **[Recipe Website](https://github.com/farzankln/recipe-app)** – Stylish recipe platform with filters, search, and user features.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📌 About Me  
+✅ **Expert in React, Next.js, and modern UI frameworks**  
+✅ **Performance-focused with strong attention to detail**  
+✅ **Always exploring new technologies and best practices**  
 
-## Deploy on Vercel
+> *"Building pixel-perfect UIs and delivering amazing user experiences."*
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Goals  
+- Contribute to **open-source projects**  
+- Build **scalable and accessible web applications**  
+- Share knowledge through **articles and tutorials**  
+- Work on **high-impact, real-world projects**  
+
+---
+
+## 📚 Currently Learning  
+- **Advanced React & Next.js patterns**  
+- **State management tools** (Zustand, Redux)  
+- **TypeScript best practices**  
+- **Performance optimization techniques**  
+
+---
+
+## 🌐 Connect with Me  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)  
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:farzankalantari.pg@gmail.com)  
+
+---
++98 937 204 64 38
+farzankalantari.pg@gmail.com
+Iran, Shiraz
+    

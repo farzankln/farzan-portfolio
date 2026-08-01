@@ -24,8 +24,8 @@ const HeroButtons = () => {
         Explore My Work
       </motion.a>
 
-      {/* <motion.a
-        href="/cv.pdf"
+      <motion.a
+        href="/assets/Farzan-Kalantari-Frontend-Developer-Resume.pdf"
         download
         variants={buttonVariants}
         whileHover="hover"
@@ -33,8 +33,8 @@ const HeroButtons = () => {
         className="flex-1 sm:flex-none min-w-[160px] px-6 py-3 bg-white/10 backdrop-blur-md text-cyan-600 rounded-lg 
         font-semibold shadow-md border border-cyan-600 hover:bg-white/15 transition-colors duration-300 text-center"
       >
-        Download Resume
-      </motion.a> */}
+        Download CV
+      </motion.a>
     </div>
   );
 };
