@@ -1,6 +1,15 @@
 export const projects = [
   {
     id: "p1",
+    title: "PC Hardware Price Tracker",
+    description:
+      "A sleek front-end prototype for monitoring PC hardware prices. This project demonstrates a modern category-based browsing experience for CPUs, GPUs, and storage components using structured mock data. It features a clean product listing, special deals section, and a responsive dashboard—showcasing how a price tracking interface would look and feel without relying on a live backend or web scraping.",
+    image: "/images/PCHardwarePriceTracker.png",
+    href: "https://pc-hardware-price-tracker.vercel.app/",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+  },
+  {
+    id: "p2",
     title: "CodeRiddle",
     description:
       "A multi-tenant web application where **Creators** design sequential riddle sets for **Solvers** to solve. Solvers unlock a final prize by correctly answering every riddle.",
@@ -9,7 +18,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind", "Supabase", "Prisma"],
   },
   {
-    id: "p2",
+    id: "p3",
     title: "Sorting Visualizer",
     description:
       "Understanding algorithms becomes intuitive when you can see them in action. This Sorting Visualizer transforms abstract code into interactive, color-coded animations—making it effortless to grasp how sorting algorithms work step by step.",
@@ -18,7 +27,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind"],
   },
   {
-    id: "p3",
+    id: "p4",
     title: "Authentication App",
     description:
       "This is a simple authentication app built with Next.js and NextAuth.js, allowing users to sign up and log in using Google, GitHub, or email/password authentication. The app uses MongoDB to store user credentials.",
@@ -27,7 +36,7 @@ export const projects = [
     tags: ["Next.js", "NextAuth.js", "MongoDB", "bcrypt"],
   },
   {
-    id: "p4",
+    id: "p5",
     title: "ChefMate",
     description: "A recipe management app to browse and save favorite recipes.",
     image: "/images/preChefMate.png",
@@ -35,7 +44,7 @@ export const projects = [
     tags: ["Next.js", "Zustand", "MongoDB", "NextAuth.js"],
   },
   {
-    id: "p5",
+    id: "p6",
     title: "Movie Nest",
     description:
       "Movie Nest is a web application that allows users to Browse trending & newly released movies Search for movies by title View detailed movie information, including posters and trailers Watch official trailers directly from YouTube",
@@ -44,7 +53,7 @@ export const projects = [
     tags: ["React.js", "TypeScript", "Tailwind", "YouTube Embeds"],
   },
   {
-    id: "p6",
+    id: "p7",
     title: "Promptopia",
     description:
       "Promptopia is a web application that allows users to explore, create, and share AI prompts. It provides a platform for people to create custom prompts for different AI models and share them with a community of users.",
@@ -53,7 +62,7 @@ export const projects = [
     tags: ["Next.js", "JWT", "MongoDB", "Node.js", "Express.js"],
   },
   {
-    id: "p7",
+    id: "p8",
     title: "Random Quote Generator",
     description:
       "This is a simple Random Quote Generator built with React and Tailwind CSS. It fetches random quotes from an API and allows users to save their favorite quotes.",
@@ -62,7 +71,7 @@ export const projects = [
     tags: ["React", "Tailwind", "Axios", "LocalStorage"],
   },
   {
-    id: "p8",
+    id: "p9",
     title: "QR Code Generator",
     description:
       "This project is a modern and responsive QR Code Generator built using React. Users can enter a URL, generate a QR code, and download it in different formats.",
@@ -72,7 +81,7 @@ export const projects = [
   },
 
   {
-    id: "p9",
+    id: "p10",
     title: "Algorithm Calculator",
     description:
       "This project is a web-based application that simulates various CPU scheduling algorithms. It provides an interactive interface for users to input process details and view calculated results, including execution order and average times.",
@@ -81,7 +90,7 @@ export const projects = [
     tags: ["Next.js", "TypeScript", "Tailwind", "Framer motion"],
   },
   {
-    id: "p10",
+    id: "p11",
     title: "Lexical Analyzer",
     description:
       "A web-based lexical analyzer built with Next.js and React. Paste source code and instantly view classified tokens with line/column positions.",
